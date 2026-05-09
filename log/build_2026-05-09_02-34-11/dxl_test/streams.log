@@ -1,0 +1,7 @@
+[0.006s] Invoking command in '/home/hjkim/ros2_control_ws/build/dxl_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjkim/ros2_control_ws/src/dxl_test -DCMAKE_INSTALL_PREFIX=/home/hjkim/ros2_control_ws/install/dxl_test
+[0.009s] [31mCMake Error at CMakeLists.txt:13:
+[0.009s]   Parse error.  Expected "(", got identifier with text "directories".
+[0.009s] 
+[0.009s] [0m
+[0.009s] -- Configuring incomplete, errors occurred!
+[0.010s] Invoked command in '/home/hjkim/ros2_control_ws/build/dxl_test' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjkim/ros2_control_ws/src/dxl_test -DCMAKE_INSTALL_PREFIX=/home/hjkim/ros2_control_ws/install/dxl_test

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!--
+        ros2_control 태그: ros2_control 하드웨어 인터페이스 블록 정의
+        - name: 이 인터페이스의 고유 이름 (컨트롤러 매니저가 식별에 사용)
+        - type: "system"은 여러 조인트를 하나의 하드웨어 단위로 묶어 제어함을 의미
+    -->
+    <ros2_control name="MobileBaseHardwareInterface" type="system">
+
+        <!--
+            hardware 태그: 실제 하드웨어 플러그인 지정
+            - plugin: mock_components/GenericSystem → 실제 하드웨어 없이 시뮬레이션하는 가상 플러그인
+            - calculate_dynamics: true → 속도 명령으로부터 위치를 자동 계산 (적분)
+              (실제 로봇에서는 이 플러그인 대신 실제 드라이버 플러그인을 사용)
+        -->
+        <hardware>
+            <plugin>mock_components/GenericSystem</plugin>
+            <param name="calculate_dynamics">true</param>
+        </hardware>
+
+        <!--
+            오른쪽 바퀴 조인트 인터페이스 정의
+            - command_interface velocity: 속도 명령을 이 조인트에 내릴 수 있음 (제어 입력)
+            - state_interface position: 조인트의 현재 위치(각도)를 읽을 수 있음 (피드백)
+            - state_interface velocity: 조인트의 현재 속도를 읽을 수 있음 (피드백)
+        -->
+        <joint name="base_right_wheel_joint">
+            <command_interface name="velocity" />
+            <state_interface name="position" />
+            <state_interface name="velocity" />
+        </joint>
+
+        <!--
+            왼쪽 바퀴 조인트 인터페이스 정의
+            - 오른쪽 바퀴와 동일한 구조로 속도 명령 및 위치/속도 피드백을 지원
+        -->
+        <joint name="base_left_wheel_joint">
+            <command_interface name="velocity" />
+            <state_interface name="position" />
+            <state_interface name="velocity" />
+        </joint>
+
+    </ros2_control>
+
+</robot>
