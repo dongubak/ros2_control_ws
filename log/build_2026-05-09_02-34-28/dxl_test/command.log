@@ -1,6 +1,0 @@
-Invoking command in '/home/hjkim/ros2_control_ws/build/dxl_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjkim/ros2_control_ws/src/dxl_test -DCMAKE_INSTALL_PREFIX=/home/hjkim/ros2_control_ws/install/dxl_test
-Invoked command in '/home/hjkim/ros2_control_ws/build/dxl_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hjkim/ros2_control_ws/src/dxl_test -DCMAKE_INSTALL_PREFIX=/home/hjkim/ros2_control_ws/install/dxl_test
-Invoking command in '/home/hjkim/ros2_control_ws/build/dxl_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjkim/ros2_control_ws/build/dxl_test -- -j4 -l4
-Invoked command in '/home/hjkim/ros2_control_ws/build/dxl_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hjkim/ros2_control_ws/build/dxl_test -- -j4 -l4
-Invoking command in '/home/hjkim/ros2_control_ws/build/dxl_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjkim/ros2_control_ws/build/dxl_test
-Invoked command in '/home/hjkim/ros2_control_ws/build/dxl_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hjkim/ros2_control_ws/build/dxl_test

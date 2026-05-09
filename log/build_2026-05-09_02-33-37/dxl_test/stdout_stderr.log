@@ -1,5 +1,0 @@
--- Configuring incomplete, errors occurred!
-[31mCMake Error at CMakeLists.txt:13:
-  Parse error.  Expected "(", got identifier with text "directories".
-
-[0m
